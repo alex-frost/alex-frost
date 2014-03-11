@@ -1,10 +1,10 @@
 ---
 layout: post
 title:  "YADR in Terminator"
-date:   2014-03-08 20:11:21
-categories: yadr terminator debian jessie
+tags: [yadr, terminator, debian, jessie]
 comments: true
 ---
+{% include JB/setup %}
 
 I'm been using GNU/Linux for almost 10 years and helping friends install it on
 their computers.  Recently I tried out Lubuntu for something lightweight.  The
@@ -55,7 +55,7 @@ Extra tweaks
 
 * setting gvim to save when focus is lost on a window (e.g. you click away) stops you
 having to type `:w` all the time so I also add:
-`:au FocusLost * :wa`i
+`:au FocusLost * :wa`
 
 * it is a bit annoying that the Sneak plugin remaps 'S' so I also deleted these lines (295-297)
 from ".yadr/vim/bundle/vim-sneak/plugin/sneak.vim"
