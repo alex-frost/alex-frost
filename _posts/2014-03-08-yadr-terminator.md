@@ -23,7 +23,7 @@ YADR didn't work out of the box so I'm mainly writing this to make the
 installation process easier in future and help any one else who has the same issues.
 
 I use Terminator because of its split screen feature and it has all the
-options I need.  Except... on my friends' iTerm if you command click on a stack 
+options I need.  Except... on my friends' iTerm if you command click on a stack
 trace you are taken to the file and line number in your editor of choice: vim!
 
 #### After installing YADR
@@ -60,13 +60,13 @@ having to type `:w` all the time so at the bottom of "~./vimrc" I add:
 * it is a bit annoying that the Sneak plugin remaps 'S' so I also deleted these lines (295-297)
 from ".yadr/vim/bundle/vim-sneak/plugin/sneak.vim"
 
-```
-if !hasmapto('<Plug>SneakBackward') && !hasmapto('<Plug>Sneak_S', 'n') && mapcheck(
-  nmap S <Plug>Sneak_S
-endif
+```diff
+-if !hasmapto('<Plug>SneakBackward') && !hasmapto('<Plug>Sneak_S', 'n') && mapcheck('S', 'n') ==# ''
+-  nmap S <Plug>Sneak_S
+-endif
 ```
 
-this is definatly not the best way of unmapping something but `unmap S` didn't seem to work of me.
+this is definitely not the best way of unmapping something but `unmap S` didn't seem to work of me.
 
 
 On Debian I also wanted to remap the keyboard so CapsLock and Escape are switched.  I needed to
