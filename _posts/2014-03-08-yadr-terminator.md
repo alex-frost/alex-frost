@@ -23,9 +23,8 @@ YADR didn't work out of the box so I'm mainly writing this to make the
 installation process easier in future and help any one else who has the same issues.
 
 I use Terminator because of its split screen feature and it has all the
-options I need.  Except... on my friends' iTerm if you command click on a file
-link (in an rspec error message for example) you are taken to the file and
-line number in your editor of choice: vim!
+options I need.  Except... on my friends' iTerm if you command click on a stack 
+trace you are taken to the file and line number in your editor of choice: vim!
 
 #### After installing YADR
 
