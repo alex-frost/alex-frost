@@ -38,7 +38,7 @@ little squares with numbers inside and not the nice powerline symbols.  Turns ou
 didn't have the right fonts and needed to
 `git clone https://github.com/scotu/ubuntu-mono-powerline.git ~/.fonts/ && fc-cache -vf ~/.fonts`
 
-* the default font in gvim was bad, really bad so in "~/.vimrc" I added:
+* the default font in gvim was bad, really bad so in "~/.vimrc.after" I added:
 
 ```
 if has('gui_running')
