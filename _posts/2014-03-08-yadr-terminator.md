@@ -50,12 +50,16 @@ After that YADR was good to go.
 
 #### Extra tweaks
 
+All added to the "~/.vimrc.after" file
+
 * Setting gvim to save when focus is lost on a window (e.g. you click away) stops you
-having to type `:w` all the time so at the bottom of "~./vimrc" I add:
+having to type `:w` :
 `:au FocusLost * :wa`
 
 * I like to have NERDTree open by default so I also add:
 `:au VimEnter * NERDTree | wincmd p`
+
+* To use the linux system clipboard `set clipboard=unnamedplus`
 
 * it is a bit annoying that the Sneak plugin remaps 'S' so I also deleted these lines (295-297)
 from ".yadr/vim/bundle/vim-sneak/plugin/sneak.vim"
