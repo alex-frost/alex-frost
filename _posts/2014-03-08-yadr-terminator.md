@@ -89,7 +89,7 @@ this is definitely not the best way of unmapping something but `unmap S` didn't 
 
 
 On Debian I also wanted to remap the keyboard so CapsLock and Escape are switched.  I needed to
-`apt-get install console-common console-data` then add `"XKBOPTIONS="caps:swapescape"` to "/etc/default/keyboard".
+`apt-get install console-common console-data` then add `XKBOPTIONS="caps:swapescape"` to "/etc/default/keyboard".
 To get the configuration to work I `sudo dpkg-reconfigure console-setup` AND restarted (the restart might have been enough).
 You might not need the console packages as I was using Xfce.
 
