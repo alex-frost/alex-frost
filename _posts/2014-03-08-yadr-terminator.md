@@ -15,7 +15,7 @@ dot files.  I've been pairing with a friend on his Mac and he used YADR so I tho
 should try it out.
 
 
-### YADR (Yet another Dot Repo)
+### YADR (Yet Another Dot Repo)
 
 YADR is a collection of dot files which adds great
 functionality to your shell (if it was Bash then soon you'll be on Zsh), vim and git.
@@ -25,6 +25,19 @@ installation process easier in future and help any one else who has the same iss
 I use Terminator because of its split screen feature and it has all the
 options I need.  Except... on my friends' iTerm if you command click on a stack
 trace you are taken to the file and line number in your editor of choice: vim!
+
+#### Before installing YADR
+
+Make sure you have ruby working.  I use [rbenv](https://github.com/sstephenson/rbenv) so (copied from the rbenv readme) :
+```sh
+git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
+echo 'eval "$(rbenv init -)"' >> ~/.bash_profile
+git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
+rbenv install 2.1.1
+rbenv global 2.1.1
+```
+also make sure you have a modern version of vim with lua enabled for [neocomplete](https://github.com/Shougo/neocomplete.vim#requirements) to work.  With lua support is included in packages: vim-nox (for command line use), vim-gtk (for graphical vim in KDE environments), vim-gnome (for graphical vim in GNOME) and vim-athena (for graphical vim in [Athena](http://en.wikipedia.org/wiki/Project_Athena)).
 
 #### After installing YADR
 
