@@ -4,6 +4,9 @@ permalink: /:categories/:year/:month/:day/:title
 markdown: kramdown
 kramdown:
   input: GFM
+  use_coderay: true
+  coderay:
+    coderay_line_numbers: ''
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
 

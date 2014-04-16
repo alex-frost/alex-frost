@@ -29,6 +29,7 @@ trace you are taken to the file and line number in your editor of choice: vim!
 #### Before installing YADR
 
 Make sure you have ruby working.  I use [rbenv](https://github.com/sstephenson/rbenv) so (copied from the rbenv readme) :
+
 ```sh
 git clone https://github.com/sstephenson/rbenv.git ~/.rbenv
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
@@ -37,6 +38,7 @@ git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-bu
 rbenv install 2.1.1
 rbenv global 2.1.1
 ```
+
 also make sure you have a modern version of vim with lua enabled for [neocomplete](https://github.com/Shougo/neocomplete.vim#requirements) to work.  With lua support is included in packages: vim-nox (for command line use), vim-gtk (for graphical vim in KDE environments), vim-gnome (for graphical vim in GNOME) and vim-athena (for graphical vim in [Athena](http://en.wikipedia.org/wiki/Project_Athena)).
 
 #### After installing YADR
