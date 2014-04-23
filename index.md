@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Welcome World!
+title: My thoughts, related to ruby
 ---
 {% include JB/setup %}
 
