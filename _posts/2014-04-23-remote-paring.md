@@ -28,7 +28,7 @@ The default prompt 'skwp' uses `git-info` and I changed line 412 to
 git_info[$info_format]="$REPLY`git config user.pair`"
 ```
 
-Note: this is a bit hacky and hopefully I'll post a cleaner solution soon.
+Note: this is a simplest thing I could do, you might want to do something a bit more comprehensive.
 
 Finally, on the remote server in tmux in vim (phew!) the colours were all messed up.  I love having
 clear colours for quick scanning of code so I had to force tmux to use colours properly.  
