@@ -10,7 +10,7 @@ Heroku only uses postgresql and this was the first reason I wanted it installed.
 
 In Debian jessie I needed to
 
-`apt-get install postgresql postgresql-contrib`
+`apt-get install postgresql postgresql-contrib libpq-dev`
 
 (without the postgresql-contrib package I got
 ~~~~~~~~~~~~~~~~~~~~~
