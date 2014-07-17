@@ -47,11 +47,11 @@ also make sure you have a modern version of vim with lua enabled for [neocomplet
 * the colours in vim are messed up so I went to Preferences -> Profiles -> Colors
 and set the scheme as "Solarized Dark" and the pallet as "Solarized"
 
-* the powerline fonts seemd hard to get working.  I tried following the readme docs
+* the powerline fonts didnt install with YADR.  I tried following the readme docs
 and installing the "for Powerline" fonts and patching fonts but the status bar still had
 little squares with numbers inside and not the nice powerline symbols.  Turns out I
-didn't have the right fonts and needed to
-`git clone https://github.com/scotu/ubuntu-mono-powerline.git ~/.fonts/ && fc-cache -vf ~/.fonts`
+I just needed to install them:
+`mkdir -p ~/.fonts && cp ~/.yadr/fonts/* "$_" && fc-cache -vf ~/.fonts`
 
 * the default font in gvim was bad, really bad so in "~/.vimrc.after" I added:
 
