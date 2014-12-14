@@ -16,9 +16,9 @@ pygments: true
 title : Ruby Related Thoughts
 tagline: ""
 author :
-  name : Alex Frost
+  name : Nikolai
   email : alex.frost.dev@gmail.com
-  github : alex-frost
+  github : nikolai-b
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt 
